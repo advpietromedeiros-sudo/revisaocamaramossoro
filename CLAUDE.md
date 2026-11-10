@@ -9,7 +9,7 @@
 - **Pilha:** HTML/CSS/JS num arquivo só, dados embutidos (`window.__DATA__`), progresso no `localStorage` do
   navegador. Sem servidor, sem dependência. ⚠️ **Fora da pilha do roteiro (§P4)** — divergência declarada.
 - **Portas e containers:** nenhum. Abre com duplo clique.
-- **Remoto:** `advpietromedeiros-sudo/revisaocamaramossoro`, **privado** (D-001).
+- **Remoto:** `advpietromedeiros-sudo/revisaocamaramossoro`, ⚠️ **PÚBLICO** desde 10/11/2026, no GitHub Pages
+  (D-002, decisão do titular; antes nasceu privado, D-001).
 - 🔴 **O `index.html` traz embutido o segredo que gera as chaves de licença** (`window.__CFG__`, ofuscado por XOR,
-  reversível). Publicar o arquivo (repositório público, GitHub Pages) permite a qualquer um gerar chaves válidas.
-  Ver D-002.
+  reversível). Publicado, qualquer um gera chaves válidas — risco aceito pelo titular na D-002.

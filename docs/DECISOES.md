@@ -4,16 +4,19 @@
 
 ## Em aberto
 
-### D-002 — Público ou privado, e se vai para o GitHub Pages (aberta em 10/11/2026)
-
-- **O que trava:** publicar o app na web (GitHub Pages) e tornar o repositório público.
-- **Fato medido (10/11/2026):** o `index.html` carrega em `window.__CFG__.s` o segredo da geração de chaves
-  (`keyFor` = SHA-256 do segredo + e-mail), ofuscado só por XOR com uma constante do mesmo arquivo. Quem lê o
-  arquivo publicado consegue gerar chaves para qualquer e-mail.
-- **Opções:** manter privado (como está) · publicar sabendo do risco · trocar a ativação por validação fora do
-  arquivo antes de publicar.
+Nenhuma em 10/11/2026, 20h49.
 
 ## Tomadas
+
+### D-002 — Repositório PÚBLICO, app no GitHub Pages (10/11/2026, 20h49, titular)
+
+- **Decisão do titular, textual:** opção *"Publicar no GitHub Pages"* (pergunta das 20h41) e *"pode deixar publico"*.
+- **Risco aceito, com o fato medido em 10/11/2026:** o `index.html` carrega em `window.__CFG__.s` o segredo da
+  geração de chaves (`keyFor` = SHA-256 do segredo + e-mail), ofuscado só por XOR com uma constante do mesmo arquivo.
+  Publicado, quem ler o código consegue gerar chaves válidas para qualquer e-mail. O titular foi avisado antes de
+  decidir. Substitui a D-001 quanto à visibilidade.
+- **Caminho para fechar o risco depois, se quiser:** validar a chave fora do arquivo (servidor) ou trocar o segredo
+  e distribuir chaves novas.
 
 ### D-001 — Repositório privado (10/11/2026, regra canônica de 31/10/2026)
 
