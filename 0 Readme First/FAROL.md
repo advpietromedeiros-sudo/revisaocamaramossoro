@@ -12,8 +12,9 @@
 ## Pendências declaradas (REGRA UM)
 
 1. **D-002 em aberto:** o segredo das chaves de licença está dentro do `index.html`; publicar exige decisão.
-2. **Sem portão e sem CI ainda** (`docs/verificar_antes_de_subir.py`, `.github/workflows/ci.yml`, roteiro §P12):
-   o repositório tem só o app e a governança mínima.
+2. ✅ **20h41 — portão e CI criados:** `docs/verificar_antes_de_subir.py` confere a sintaxe do JS, os dados
+   (LOM 264 · Regimento 355 · 153 questões · 64 cartões), que toda questão e cartão citam artigo existente e que os
+   gabaritos são válidos; o `--autoteste` planta 4 defeitos e acusa os 4. A CI roda os dois.
 3. **Texto legal não conferido** contra as publicações oficiais nesta sessão.
 
 ## O que fica rodando
